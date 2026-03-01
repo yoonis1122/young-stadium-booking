@@ -1,0 +1,39 @@
+.stadiums-header {
+    margin-bottom: 40px;
+}
+
+.stadiums-search {
+    margin-bottom: 32px;
+}
+
+.search-input {
+    font-size: 16px;
+    padding: 16px 20px;
+    border-radius: var(--radius-md);
+}
+
+.results-count {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+}
+
+.no-results {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.no-results-icon {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+.no-results h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.no-results p {
+    color: var(--text-secondary);
+}

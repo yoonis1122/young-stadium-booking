@@ -1,0 +1,11 @@
+.bookings-filters {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.bookings-filters .form-group {
+    min-width: 180px;
+    flex: 1;
+}

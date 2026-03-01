@@ -1,0 +1,79 @@
+.revenue-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.revenue-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.stadium-revenue-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.stadium-revenue-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.stadium-revenue-rank {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-muted);
+    width: 24px;
+}
+
+.stadium-revenue-name {
+    font-size: 14px;
+    font-weight: 500;
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.stadium-revenue-bar-wrap {
+    flex: 1;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.stadium-revenue-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+    border-radius: 4px;
+    transition: width 0.6s ease;
+}
+
+.stadium-revenue-value {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--success);
+    min-width: 70px;
+    text-align: right;
+}
+
+@media (max-width: 1024px) {
+    .revenue-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .revenue-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .revenue-stats {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,161 @@
+.back-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 24px;
+    padding: 0;
+    transition: var(--transition);
+}
+
+.back-btn:hover {
+    color: var(--primary);
+}
+
+.booking-layout {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 24px;
+    align-items: start;
+}
+
+/* Summary */
+.booking-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.summary-stadium-image {
+    height: 200px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.summary-stadium-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.summary-stadium-name {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.summary-location {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 0;
+}
+
+.summary-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 20px 0;
+}
+
+.summary-details {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.summary-row span {
+    color: var(--text-secondary);
+}
+
+.summary-row strong {
+    font-weight: 600;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.total-price {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--primary);
+}
+
+/* Payment */
+.booking-payment {
+    text-align: center;
+    position: sticky;
+    top: 90px;
+}
+
+.payment-icon {
+    font-size: 56px;
+    margin-bottom: 16px;
+}
+
+.booking-payment h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.booking-payment p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.payment-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    margin-bottom: 28px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: var(--radius-md);
+}
+
+.payment-features li {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.payment-features code {
+    background: rgba(0, 200, 83, 0.1);
+    color: var(--primary);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.payment-note {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 14px;
+}
+
+@media (max-width: 1024px) {
+    .booking-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-payment {
+        position: static;
+    }
+}

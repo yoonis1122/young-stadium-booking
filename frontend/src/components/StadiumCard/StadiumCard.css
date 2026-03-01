@@ -1,0 +1,110 @@
+.stadium-card {
+    display: block;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.stadium-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 200, 83, 0.3);
+}
+
+.stadium-card-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.stadium-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.stadium-card:hover .stadium-card-image img {
+    transform: scale(1.08);
+}
+
+.stadium-card-overlay {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.stadium-card-sizes {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 100px;
+}
+
+.stadium-card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stadium-card-name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.stadium-card-location {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.stadium-card-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.stadium-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+
+.stadium-card-sizes-list {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.stadium-card-price {
+    display: flex;
+    align-items: baseline;
+    gap: 3px;
+}
+
+.price-from {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.price-amount {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.price-unit {
+    font-size: 13px;
+    color: var(--text-muted);
+}

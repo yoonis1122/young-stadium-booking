@@ -1,0 +1,20 @@
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-main {
+    margin-left: var(--sidebar-w);
+    flex: 1;
+    padding: 32px;
+    min-height: 100vh;
+    background: var(--bg);
+    background-image: radial-gradient(ellipse at 80% 10%, rgba(0, 200, 83, 0.04) 0%, transparent 50%);
+}
+
+@media (max-width: 768px) {
+    .admin-main {
+        margin-left: 0;
+        padding: 20px;
+    }
+}

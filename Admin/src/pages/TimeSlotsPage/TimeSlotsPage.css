@@ -1,0 +1,46 @@
+.timeslots-filters-row {
+    display: flex;
+    gap: 16px;
+}
+
+.timeslots-create-form {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+}
+
+.slots-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.slot-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.slot-item-booked {
+    opacity: 0.6;
+}
+
+.slot-time {
+    font-size: 14px;
+    font-weight: 500;
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .timeslots-filters-row {
+        flex-direction: column;
+    }
+
+    .timeslots-create-form {
+        flex-direction: column;
+    }
+}
